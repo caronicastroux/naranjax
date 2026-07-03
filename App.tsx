@@ -1,20 +1,15 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { EventStoreProvider } from './src/store/EventStore';
+import { AppNavigator } from './src/navigation';
+import { ToastView } from './src/components/ToastView';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <EventStoreProvider>
+      <StatusBar style="dark" />
+      <AppNavigator />
+      <ToastView />
+    </EventStoreProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
