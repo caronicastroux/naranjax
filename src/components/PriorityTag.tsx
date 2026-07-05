@@ -65,9 +65,9 @@ const styles = StyleSheet.create({
   chip: {
     flexDirection: 'row',
     alignItems: 'center',
+    height: 28,
     paddingLeft: 12,
     paddingRight: 6,
-    paddingVertical: 4,
     borderRadius: 1000,
     borderWidth: 1,
     borderColor: colors.neutral500,

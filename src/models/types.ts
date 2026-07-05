@@ -2,7 +2,7 @@ export type EventType = 'Casamiento' | 'Cumpleaños' | 'Aniversario' | 'Corporat
 
 export type TaskPriority = 'Alta' | 'Media' | 'Baja';
 
-export type TaskStatus = 'Pendiente' | 'En progreso' | 'Hecho';
+export type TaskStatus = 'Pendiente' | 'Hecho';
 
 export interface Event {
   id: string;
@@ -26,7 +26,7 @@ export interface Task {
 
 export const EVENT_TYPES: EventType[] = ['Casamiento', 'Cumpleaños', 'Aniversario', 'Corporativo'];
 export const TASK_PRIORITIES: TaskPriority[] = ['Alta', 'Media', 'Baja'];
-export const TASK_STATUSES: TaskStatus[] = ['Pendiente', 'En progreso', 'Hecho'];
+export const TASK_STATUSES: TaskStatus[] = ['Pendiente', 'Hecho'];
 
 export const EVENT_ICONS: Record<EventType, string> = {
   Casamiento: 'heart',

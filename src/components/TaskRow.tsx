@@ -178,7 +178,7 @@ function CardContent({
           </View>
         </View>
         <View style={styles.chipRow}>
-          <StatusChip status={task.estado} />
+          <StatusChip status={task.estado} onPress={onStatusChange} />
           <PriorityTag priority={task.prioridad} onPress={onPriorityChange} />
         </View>
       </View>

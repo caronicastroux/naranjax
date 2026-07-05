@@ -54,7 +54,7 @@ export function TaskDetailScreen() {
             <Text style={styles.titulo}>{task.nombre}</Text>
           </View>
           <View style={styles.chipRow}>
-            <StatusChip status={task.estado} />
+            <StatusChip status={task.estado} onPress={(s) => updateTask({ ...task, estado: s })} />
             <PriorityTag
               priority={task.prioridad}
               onPress={(p) => updateTask({ ...task, prioridad: p })}
